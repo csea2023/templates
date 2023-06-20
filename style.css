@@ -4,6 +4,7 @@ body{
     overflow-x: hidden;
     
 }
+
 .chord{
     flex-direction: row;
     position: relative;
@@ -18,6 +19,7 @@ body{
     -webkit-text-stroke: 1px #fff;
    background: url(back.png);
    -webkit-background-clip: text;
+   background-clip:text;
    background-position: 0 0;
    animation: back 7s linear infinite;   
   
@@ -114,12 +116,12 @@ button{
     border:  1px solid rgba(255, 255, 255,0.1) ;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    width: 10rem;
+    width: 11rem;
     background-color: rgb(167, 65, 207);
     padding: 10px 0px;
     border-radius: 10px;
     color:aliceblue;
-    margin-left: 10px;
+    margin-left: 100px;
 
  }
 
@@ -181,15 +183,67 @@ body{
     transition: 0.5s ease;
  }
 
- 
- @media (min-width: 1200px){
-
- }
-
- @media (min-width: 768px) and (max-width: 1199px){
-
- }
-
  @media (max-width: 767px) {
-
+.chord{
+    font-size: 80px;
+}
  }
+ @media (max-width:687px){
+   .item{ 
+    flex-direction: column;
+    margin: 0;
+     
+    }
+    .upload{
+        position: relative;
+        left:-10px;
+        bottom: 15px;
+    }
+    .subbtn{
+        position: relative;
+        left:-59px;
+    }
+    }
+ @media (max-width: 414px){
+    
+    .chord{
+        position: relative;
+        left: -30px;
+        font-size:55px;
+        margin: 0px;
+    }
+    .item{ 
+        flex-direction: row;
+        margin: 0;
+        }
+       
+        .nav ul li a{
+            margin: 0;
+            padding: 0px 0px;
+        }
+        .upload{
+            position: relative;
+            left:-10px;
+            bottom: 15px;
+        }
+        .subbtn{
+            position: relative;
+            left:-59px;
+        }
+}
+@media (max-width:520px) and (min-width:415px){
+
+    .chord{
+        font-size: 61px;
+    }
+   
+    .upload{
+        position: relative;
+        left:-10px;
+        bottom: 15px;
+    }
+    .subbtn{
+        position: relative;
+        left:-59px;
+    }
+}
